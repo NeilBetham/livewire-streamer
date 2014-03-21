@@ -24,6 +24,6 @@ Setup
 Configuration
 =============
 * Output formatting
- * avconv -f s24be -ar 48k -ac 2 -i - -f mp3 -b:a 320K -
+ * This portion of the command determines the output format | avconv -f s24be -ar 48k -ac 2 -i - -f mp3 -b:a 320K -
  * -f mp3 | Change that to the format you want to stream
  * -b:a 320K | Change 320K to the bit rate you want to broadcast in
