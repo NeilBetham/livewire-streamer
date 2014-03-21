@@ -6,9 +6,10 @@ Stream a Livewire multicast stream to Icecast
 
 Setup
 =====
-* Small Ubuntu VM on your Livewire network, you can prolly get away with 1 core
-* FFMpeg installed with MP3 support
-* EZStream installed
+* Small Ubuntu VM on your Livewire network, I used 13.10, you can prolly get away with 1 core if you run server edition
+* ffmpeg installed with MP3 support
+* ezstream installed
+* dumprtp installed
 
 1. Use http://axiaaudio.com/axia-livewire-sdp-generator-version-1-0 to get the multicast IP for your channel number
  * The line "c=IN IP4 239.192.0.203" has the ip you need
