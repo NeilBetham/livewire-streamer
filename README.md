@@ -11,6 +11,7 @@ Setup
 * ezstream installed
 * dumprtp installed
 
+
 1. Use http://axiaaudio.com/axia-livewire-sdp-generator-version-1-0 to get the multicast IP for your channel number
  * The line "c=IN IP4 239.192.0.203" has the ip you need
 2. Edit stream.conf with your specific conversion/ip details
