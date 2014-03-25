@@ -2,7 +2,7 @@ livewire-streamer
 =================
 
 Stream a Livewire multicast stream to Icecast
-
+* Livewire is a protocol used in the broadcast industry to stream CD quality audio over a network.
 
 Setup
 =====
