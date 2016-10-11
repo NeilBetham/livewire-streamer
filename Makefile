@@ -1,7 +1,7 @@
 TARGET = lw-streamer
 LIBS = -lm
-CC = gcc
-CFLAGS = -g -Wall
+CC = clang
+CFLAGS = -g -Wall -std=c11
 SRCDIR = src/
 
 .PHONY: default all clean
@@ -21,5 +21,5 @@ $(TARGET): $(OBJECTS)
 	$(CC) $(OBJECTS) -Wall $(LIBS) -o $@
 
 clean:
-	-rm -f *.o
+	-rm -f $(SRCDIR)*.o
 	-rm -f $(TARGET)
