@@ -19,10 +19,25 @@ Setup
  * The line "c=IN IP4 239.192.0.203" has the ip you need
 2. Edit stream.conf with your specific conversion/ip details
 3. Edit ezstream.xml with your icecast details
-4. Copy stream.conf to /etc/init/
-5. `> start stream`
-6. ???
-7. Profit!
+4. If you are on Ubuntu 16.04, go to the directions below
+5. Copy stream.conf to /etc/init/Unless you are running 16.04 in which case checkout the directions below
+6. `> start stream`
+7. ???
+8. Profit!
+
+## Ubuntu 16.04 Systemd Configuration
+For Ubuntu 16.04 the init system was switch from Upstart to Systemd. As such you will need to use the example
+`livewire-streamer.service` Systemd unit file instead of the upstart conf file.
+
+1. Copy the `livewire-stream.service` to `/etc/systemd/system/`
+2. `> systemctl daemon-reload`
+3. `> systemctl enable livewire-streamer.service`
+4. `> systemctl start livewire-streamer.service`
+5. ???
+6. Profit!
+
+Your streaming process should be up and running, this can be checked with `systemctl status livewire-streamer.service`
+
 
 Configuration
 =============
